@@ -7,7 +7,7 @@ This is a **toy** not meant for real Red Team engagements.  However I randomly m
 
 The idea comes from using existing and trusted transport methods to achieve nefarious goals.  Mqtt's pub/sub type method of communication is perfectly situated for this and is common especially with iot type devices.  Mosquitto mqtt is easy to set up and also supports using forwarders.
 
-Using mqtt as a remote shell mecahnism has been done before and isn't anything new, however I wanted to attempt to give it a more polished interface as seen in many other C2 type frameworks.
+Using mqtt as a remote shell mechanism has been done before and isn't anything new, however I wanted to attempt to give it a more polished interface as seen in many other C2 type frameworks.
 
 ---
 
