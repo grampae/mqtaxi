@@ -33,7 +33,6 @@ Python agents are generated using the 'generate' command within the config menu 
 - It is bloated and needs work
 - It uses Python agents
 - Doesn't follow standard accepted Python styles of coding, oops.
-- It currently works, and isn't detected with Defender most of the time. (Please don't upload agents to virustotal)
 
 **Listener Features:**
 - Multi handler with Mosquitto mqtt pub/sub listener
